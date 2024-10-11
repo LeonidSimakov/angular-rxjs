@@ -1,1 +1,10 @@
+@for (route of routes; track route) {
+  <button
+    routerLinkActive="active"
+    [routerLink]="route"
+  >
+    {{ route }}
+  </button>
+}
+
 <router-outlet />
