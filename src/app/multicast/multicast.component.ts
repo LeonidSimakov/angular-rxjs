@@ -37,7 +37,7 @@ export class MulticastComponent {
     map(items => items.filter((_, i) => i % 2 === 0)),
     tap(() => console.log('evenItems touched')),
     // А вот здесь уже можно пошарить, чтобы одними и теми же отфильтрованными значениями пользоваться в нескольких местах
-    shareReplay({ bufferSize: 1, refCount: false }),
+    shareReplay({ bufferSize: 1, refCount: true }),
   );
   readonly evenItemsLenght = this.evenItems.pipe(
     map(items => items.length)
