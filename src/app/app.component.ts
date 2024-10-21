@@ -15,6 +15,6 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
 
-  readonly routes = ['1', '2', '3', '4', '5'];
+  readonly routes = ['1', '2', '3', '4', '5', '6'];
 
 }

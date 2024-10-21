@@ -1,0 +1,26 @@
+.loading {
+  height: 1em;
+  animation: 0.5s linear infinite blink_effect;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+@keyframes blink_effect {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateX(8px);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translateX(1px);
+  }
+}
